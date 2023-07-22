@@ -1,0 +1,162 @@
+/* created with ♥ */
+/* I rewrote this project.
+I used this project for educational practice. */
+/* Github: https://github.com/miladjoodi
+LinkedIn: https://www.linkedin.com/in/miladjoodi/
+Email: winbeta.com@gmail.com
+IG: https://www.instagram.com/milad_joodi/ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    background-color: #080710;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+input,button{
+    font-family: inherit;
+}
+.wrapper {
+    width: 400px;
+    position: relative;
+}
+.form {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.13);
+    color: #fff;
+    padding: 50px 35px 35px 35px;
+    border: 2px solid rgba(255, 255, 255, 0.13);
+    border-radius: 10px;
+    box-shadow: 0 0 40px rgba(0,0,0, 0.5);
+    backdrop-filter: blur(10px);
+}
+.form__title {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+    transition: .7s ease-out;
+}
+.form__title:hover{
+    letter-spacing: 3px;
+}
+.form__input-wrapper {
+    margin-bottom: 26px;
+}
+.form__lable{
+    font-size: 16px;
+}
+.form__input{
+    font-size: 14px;
+    font-weight: 300;
+    display: block;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.07);
+    padding: 0 10px;
+    border: none;
+    outline: none;
+    width: 100%;
+    margin-top: 8px;
+    color: #fff;
+    border-radius: 4px;
+    transition: 0.5s ease-in;
+}
+.form__input::placeholder{
+    color: #e5e5e5;
+}
+.form__input:hover{
+    box-shadow: 0 0 5px rgba(175, 175, 175, 0.685);
+}
+.form_submit-btn{
+    background-color: #fff;
+    color: #080710;
+    border-radius: 4px;
+    text-align: center;
+    padding: 15px 0;
+    display: block;
+    font-size: 18px;
+    width: 100%;
+    margin-top: 44px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+  
+  a{
+      background-color: #fff;
+      color: #333;
+      border-radius: 4px;
+      text-align: center;
+      padding: 15px 0;
+      display: block;
+      font-size: 18px;
+    width: 100%;
+    margin-top: 44px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    line-height: 25px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    position: relative;
+    transition: all .35s;
+  }
+  
+  a span{
+    position: relative;
+    z-index: 2;
+  }
+  
+  a:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgba(13, 139, 2, 0.733);
+    transition: all 0.3s;
+  }
+  
+  a:hover{
+    color: #fff;
+  }
+  
+  a:hover:after{
+    width: 100%;
+  }
+
+.shape {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    position: absolute;
+    z-index: -1;
+    /* animation: circle-animation linear 4s infinite; */
+}
+.shape-one {
+    background: linear-gradient(227deg, rgba(0, 206, 255, 1) 0%, rgba(9, 15, 121, 1) 100%);
+    top: -80px;
+    left: -80px;
+}
+.shape-two {
+    background: linear-gradient(227deg, rgba(255, 161, 98, 1) 0%, rgba(255, 106, 0, 1) 78%);
+    bottom: -90px;
+    right: -60px;
+}
+
+@keyframes circle-animation{
+    0%{
+        scale: 0;
+    }
+    100%{
+        scale: 1;
+        opacity: 0;
+    }
+}
