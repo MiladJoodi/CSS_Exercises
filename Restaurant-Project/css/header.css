@@ -1,0 +1,51 @@
+.header {
+    background-color: #000;
+    grid-column: 1/-1;
+    background-image: linear-gradient(to bottom, #3333334f, #000), url("../img/header.jpg");
+    background-size: cover;
+    display: grid;
+    grid-template-rows: repeat(3, min-content);
+    justify-content: center;
+    align-content: center;
+    color: #fff;
+    grid-gap: 20px;
+    text-align: center;
+    font-size: 40px;
+}
+.header1 {
+    font-size: 30px;
+}
+.header2 {
+    font-size: 40px;
+}
+.header-text {
+    color: orange;
+}
+.header-btn {
+    justify-self: center;
+    padding: 20px 30px;
+    background-color: orange;
+    border-radius: 5px;
+    border: 1px solid orange;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+.header-btn:hover {
+    background-color: #fff;
+    color: orange;
+}
+@media screen and (max-width: 500px){
+    .header{
+        background-position-x: 95%;
+    }
+    .header1 {
+        font-size: 20px;
+    }
+    .header2 {
+        font-size: 30px;
+    }
+    .header-btn{
+        padding: 10px 20px;
+
+    }
+}
