@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins";
+  background-color: rgb(57, 136, 255);
+}
+.container {
+  max-width: 1300px;
+  width: 80%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0 auto;
+}
+.box {
+  width: 300px;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 3px 3px 8px rgba(0,0,0,0.3);/
+}
+.input_password {
+  width: 100%;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid #777;
+  padding: 12px 10px;
+  background: transparent;
+  z-index: 1;
+  position: relative;
+  /* font-size: 16px; */
+  /* font-weight: 700; */
+  line-height: 8px;
+  font-family: 'Poppins';
+  font-size: 10px;
+}
+.input_password:hover{
+  background-color: rgba(228, 228, 228, 0.212);
+}
+.input_password::placeholder {
+  color: transparent;
+}
+.label {
+  background-color: #fff;
+  padding: 0 10px;
+  position: absolute;
+  top: 36px;
+  left: 36px;
+  text-align: center;
+  transition: all 0.4s ease;
+  z-index: 0;
+  font-size: 14px;
+
+}
+.input_password:focus ~ .label {
+  font-size: 10px;
+  color: rgb(51, 156, 255);
+  display: block;
+  /* top: 27px;
+  left: 30px; */
+  /* padding: 0 1px; */
+
+}
+.fa-eye, .fa-eye-slash {
+  cursor: pointer;
+  position: absolute;
+  top: 38px;
+  right: 36px;
+  font-size: 20px;
+  opacity: 0.5;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+.fa-eye:hover{
+  opacity: 1;
+}
